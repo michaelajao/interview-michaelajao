@@ -1,0 +1,181 @@
+\documentclass[12pt]{article}
+
+% ------------------------
+% Packages
+% ------------------------
+\usepackage[margin=1in]{geometry}       % Adjust margins
+\usepackage[T1]{fontenc}                % Font encoding
+\usepackage[utf8]{inputenc}             % Input encoding
+\usepackage{xcolor}                     % Color definitions
+\usepackage{listings}                   % Code listings
+\usepackage{hyperref}                   % Hyperlinks
+\usepackage{fancyhdr}                   % Header and footer
+\usepackage{titlesec}                   % Custom section titles
+\usepackage{enumitem}                   % Custom lists
+
+% ------------------------
+% Header and Footer Setup
+% ------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Interview Coding Challenges}
+\lhead{\textbf{AI-4AI}}
+\rfoot{Page \thepage}
+
+% ------------------------
+% Color Definitions for Code
+% ------------------------
+\definecolor{codebg}{rgb}{0.95,0.95,0.95}    % Background color
+\definecolor{keyword}{rgb}{0.0,0.0,0.8}
+\definecolor{comment}{rgb}{0.0,0.6,0.0}
+\definecolor{string}{rgb}{0.8,0.0,0.0}
+\definecolor{function}{rgb}{0.2,0.2,0.8}
+\definecolor{variable}{rgb}{0.0,0.5,0.5}
+\definecolor{number}{rgb}{0.5,0.0,0.5}
+
+% ------------------------
+% Listings Configuration
+% ------------------------
+\lstdefinestyle{customjs}{
+    language=JavaScript,
+    backgroundcolor=\color{codebg},
+    commentstyle=\color{comment}\itshape,
+    keywordstyle=\color{keyword}\bfseries,
+    stringstyle=\color{string},
+    numberstyle=\tiny\color{gray},
+    identifierstyle=\color{black},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    morekeywords={function, console, log}, % Add more keywords if needed
+    frame=single,
+    rulecolor=\color{gray},
+    columns=fullflexible,
+    upquote=true
+}
+
+\lstdefinestyle{customjsx}{
+    language=JavaScript,
+    backgroundcolor=\color{codebg},
+    commentstyle=\color{comment}\itshape,
+    keywordstyle=\color{keyword}\bfseries,
+    stringstyle=\color{string},
+    numberstyle=\tiny\color{gray},
+    identifierstyle=\color{black},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    morekeywords={function, console, log, import, from, return, export}, % Add more keywords if needed
+    frame=single,
+    rulecolor=\color{gray},
+    columns=fullflexible,
+    upquote=true
+}
+
+% ------------------------
+% Title and Author
+% ------------------------
+\title{
+    \textbf{Interview Coding Challenges}
+}
+\author{Software Engineer Track \\ AI-4AI's Graduate Training Program}
+\date{\today}
+
+% ------------------------
+% Section Formatting
+% ------------------------
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0em}{}
+
+\titleformat{\subsection}
+  {\normalsize\bfseries}
+  {}{0em}{}
+
+% ------------------------
+% Document Start
+% ------------------------
+\begin{document}
+
+\maketitle
+
+%\tableofcontents
+%\newpage
+
+\section{Coding Challenges}
+
+\subsection{A. JavaScript Coding Challenge}
+
+\textbf{Problem Statement:}
+
+Write a function called \texttt{longestWord} that takes a string as an argument and returns the longest word in the string. If there are two or more words that are the same maximum length, return the first one. If the string is empty or does not contain any words, return an empty string.
+
+\textbf{Instructions:}
+
+\begin{itemize}
+    \item Complete the challenge on \href{https://glot.io/new/javascript}{glot.io} with your screen shared and camera on.
+\end{itemize}
+
+\textbf{Code Template:}
+
+\begin{lstlisting}[style=customjs, caption=JavaScript: longestWord Function]
+function longestWord(sentence) {
+  // Your code here
+}
+
+// Test cases
+console.log(longestWord("I love programming in JavaScript")); // Expected "programming"
+console.log(longestWord("Hello world")); // Expected "Hello"
+console.log(longestWord("")); // Expected ""
+console.log(longestWord("One two three four five")); // Expected "three"
+\end{lstlisting}
+
+\subsection{B. React Coding Exercise}
+
+\textbf{Problem Statement:}
+
+Create a simple To-Do list application in React. The user should be able to:
+
+\begin{enumerate}[label=\arabic*.]
+    \item Enter a task in an input field.
+    \item Click an \texttt{Add} button to add it to a list.
+    \item See the tasks displayed in a list.
+    \item Click on a task to mark it as completed (toggle done/undone).
+    \item \textbf{(Optional for advanced)} Add a \texttt{Delete} button to remove a task from the list.
+\end{enumerate}
+
+\textbf{Instructions:}
+
+\begin{itemize}
+    \item Fork the provided code template.
+    \item Complete the application as per the requirements.
+    \item Share your screen and keep your camera on during the interview.
+\end{itemize}
+
+\textbf{Code Template:}
+
+Access the starter code for the React To-Do application at the following link:
+
+\href{https://codesandbox.io/p/sandbox/c7965v}{https://codesandbox.io/p/sandbox/c7965v}
+
+
+% ------------------------
+% End of Document
+% ------------------------
+\end{document}
